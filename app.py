@@ -1,5 +1,7 @@
+import os
 from flask import Flask, render_template, request
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+
 
 app = Flask(__name__)
 
@@ -44,4 +46,5 @@ def summarize():
     return render_template('index.html', original_text=input_text, summary_text=summary)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
+
