@@ -27,3 +27,5 @@ Flask-Caching==2.1.0
 
 # Other Utilities
 gunicorn==21.2.0  # for deployment
+transformers
+
