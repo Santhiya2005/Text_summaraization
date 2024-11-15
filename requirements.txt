@@ -1,5 +1,7 @@
 numpy<2.0
 torch>=1.9.0
 transformers>=4.0.0
-flask
-gunicorn
+flask==2.3.2
+gunicorn==21.2.0
+python-dotenv==1.0.0  # If needed
+# Add any other required dependencies here
